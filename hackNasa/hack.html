@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hack Nasa With HTML</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.cont {
+			width: 600px;
+			height: 100vh;
+			margin: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			flex-direction: column;
+		}
+		.btn{
+			padding: 5px 10px;
+			background-color: red;
+			color: white;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="cont">
+		<h1>Hack NASA with HTML</h1>
+		<button class="btn">Hack now</button>
+		<span class="g1"></span>
+		<span class="g2"></span>
+		<span class="g3"></span><br>
+		<span class="cong"></span>
+		</span>
+
+		<button class="message"></button>
+	</div>
+
+	<script>
+		
+		const bahan = {
+			start : document.querySelector('.btn'),
+			g1 : document.querySelector('.g1'),
+			g2 : document.querySelector('.g2'),
+			g3 : document.querySelector('.g3'),
+			message : document.querySelector('.message'),
+			cong : document.querySelector('.cong')
+		}
+		
+
+		bahan.start.addEventListener('click', ()=>{
+			bahan.start.style.display = 'none'
+			calculate()
+		})
+
+		function calculate(){
+			let c = 0
+			let c2 = 0
+			let c3 = 0
+
+			let x = setInterval(()=>{
+				c++
+				bahan.g1.textContent = 'Getting NASA Data.....' + c + '%'
+				if(c == 100) {
+					clearInterval(x)
+					bahan.g1.textContent = 'Completed'
+					bahan.g1.style.color = 'green'
+					let y = setInterval(()=>{
+						c2++
+						bahan.g2.textContent = 'Getting Elon Musk Data.....' + c2 + '%'
+						if(c2 == 100){
+							clearInterval(y)
+							bahan.g2.textContent = 'Completed'
+							bahan.g2.style.color = 'green'
+							let z = setInterval(()=>{
+								c3++
+								bahan.g3.textContent = 'Getting Mark Zuckerberg Data.....' + c3 + '%'
+								if(c3 == 100){
+									clearInterval(z)
+									bahan.g3.textContent = 'Completed'
+									bahan.g3.style.color = 'green'
+									let i = 0
+									setTimeout(()=>{
+										let xx = setInterval(()=>{
+										 	let congr = ['Congratulations', 'Congratulations, you', 'Congratulaions, you have', 'Congratulations, you have hacked', 'Congratulations, you have hacked NASA', 'Congratulaions, you have hacked NASA safely']
+										 	bahan.cong.textContent = congr[i++]
+										 	if(i == congr.length) {
+										 		clearInterval(xx)
+										 		bahan.cong.textContent = 'Congratulaions, you have hacked NASA safely'
+										 		setTimeout(()=>{
+										 		bahan.message.textContent = 'You get 1 message from NASA'
+										 			message()
+										 		},1000)
+										 	}
+										 },1000)
+									},1000)
+								}
+							},100)
+						}
+					},100)
+				}
+			},100)
+		}
+		function message(){
+			bahan.message.addEventListener('click',()=>{
+				alert('hhh')
+			})
+		}
+	</script>
+</body>
+</html>
