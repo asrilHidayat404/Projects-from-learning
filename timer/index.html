@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Counter Down</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="setTimer">
+			<input type="number" id="getHours" placeholder="Hours">
+			<input type="number" id="getMinutes" placeholder="Minutes" max="60">
+			<input type="number" id="getSeconds" placeholder="Seconds" max="60">
+		</div>
+
+		<div class="timer">
+			<span id="jam">0</span>
+			<span>:</span>
+			<span id="menit">0</span>
+			<span>:</span>
+			<span id="detik">0</span>
+		</div>
+
+		<div class="control">
+			<button type="button" id="start">Start</button>
+			<button type="button" id="stop">Stop</button>
+			<button type="button" id="clear">Clear</button>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>

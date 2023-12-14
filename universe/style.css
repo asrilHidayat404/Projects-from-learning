@@ -1,0 +1,150 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	box-sizing: border-box;
+	margin: auto;
+	background-image: url(star.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1200px;
+	overflow-x: hidden;
+	width: 100vw;
+}
+
+.universe {
+	width: 900px;
+	height: 900px;
+	border: 1px solid white;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	border-radius: 50%;
+}
+
+.img {
+	position: absolute;
+	right: 0;
+}
+
+.neptunus{
+	width: 900px;
+	height: 900px;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	position: relative;
+	animation: spin 100s infinite linear;
+	position: relative;
+}
+.uranus{
+	width: 800px;
+	height: 800px;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	position: relative;
+	animation: spin 100s infinite linear;
+	position: relative;
+}
+.saturnus{
+	width: 700px;
+	height: 700px;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	position: relative;
+	animation: spin 100s infinite linear;
+	position: relative;
+}
+.jupiter{
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	position: relative;
+	animation: spin 100s infinite linear;
+	position: relative;
+}
+.mars{
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	position: relative;
+	animation: spin 100s infinite linear;
+	position: relative;
+}
+.bumi{
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	position: relative;
+	animation: spin 100s infinite linear;
+	position: relative;
+}
+.venus{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	position: relative;
+	animation: spin 100s infinite linear;
+	position: relative;
+}
+.merkurius{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	position: relative;
+	animation: spin 100s infinite linear;
+	position: relative;
+}
+
+.sun {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	box-shadow: 0 0 20px 3px gold;
+	border-radius: 50%;
+}
+
+
+
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	} to {
+		transform: rotate(360deg);
+	}
+}

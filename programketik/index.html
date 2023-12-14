@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tebak Huruf</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<img src="assets/dance.gif" alt="" width="80px" class="dance">
+	<span><b><i>Yakin cukup cepat untuk menekan keyboard sesuai huruf di layar!</i></b></span>
+	<div class="container">
+		<h1>Tebak Huruf</h1>
+		<div class="board">A-A</div>
+		<div class="score">
+			<div>Benar: <span class="benar">0</span></div>
+			<div>Salah: <span class="salah">0</span></div>
+		</div>
+		<div class="newGame">
+			<label>Masukkan Durasi untuk huruf yang akan keluar</label>
+			<input type="number" class="getDuration" placeholder="1000 = 1 detik" name="">
+			<button class="start">Start</button>
+		</div>
+	</div>
+	<span><i>Warning: game ini tidak bisa dimainkan di hp, kecuali hp anda ada keyboard eksternal</i></span>
+	<script src="script.js"></script>
+</body>
+</html>

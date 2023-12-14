@@ -1,0 +1,257 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #eaeaea;
+	overflow-x: hidden;
+}
+.container {
+	max-width: 1300px;
+	box-sizing: border-box;
+	margin: auto;
+	font-family: Arial, sans-serif;
+}
+
+.container nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	text-transform: capitalize;
+	font-weight: bold;
+	padding: 20px 0;
+	background-color: white;
+}
+.container nav a{
+	text-decoration: none;
+	color: darkblue;
+	transition: .3s;
+}
+.container nav .logo {
+	flex: .5;
+	text-align: center;
+}
+.container nav .logo a{
+	color: red;
+}
+.container nav ul {
+	flex: .5;
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+.container nav ul li a:hover {
+	color: deepskyblue;
+}
+.container nav .contact {
+	flex: .5;
+	text-align: center;
+}
+.container nav .contact a{
+	background-color: darkblue;
+	color: #eaeaea;
+	padding: 8px;
+	border-radius: 3px;
+}
+.container nav .contact a:hover {
+	background-color: skyblue;
+	color: darkblue;
+}
+
+nav .hamburger {
+	width: 27px;
+	height: 20px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+}
+nav .hamburger span {
+	width: 100%;
+	height: 3px;
+	background-color: red;
+}
+
+.container nav ul.active{
+	right: 0;
+	transition: .4s;
+}
+
+
+.container .hero {
+	width: 100%;
+	height: 600px;
+	box-sizing: border-box;
+	display: flex;
+}
+.container .hero .left {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 40px;
+	padding: 0 50px;
+	box-sizing: border-box;
+	font-size: 1em;
+}
+.container .hero .left .h1 {
+	color: darkblue;
+	line-height: 44px;
+	text-transform: capitalize;
+	display: inline-block;
+	height: 90px;
+}
+.container .hero .left p {
+	color: rgba(0, 0, 40, .6);
+}
+.container .hero .left .btn {
+	display: flex;
+	width: 50%;
+	justify-content: space-between;
+}
+.container .hero .left .btn a{
+	padding: 8px;
+	color: rgba(0, 0, 60, .9);;
+	border: 2px solid rgba(0, 0, 60, .9);;
+	text-decoration: none;
+	font-weight: bold;
+}
+.container .hero .left .btn a:hover {
+	color: #eaeaea;
+	background-color: rgba(0, 0, 40, 1);
+	transition: .3s;
+}
+.container .hero .right {
+	width: 50%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .hero .right .box1{
+	width: 50%;
+	height: 50%;
+	border-radius: 10px;
+	position: relative;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+.container .hero .right .box1 .box11{
+	width: 50%;
+	height: 50%;
+	background-color: rgba(0, 0, 40, 1);
+	color: #eaeaea;
+	border-radius: 5px;
+	position: absolute;
+	left: -80px;
+	top: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	padding-left: 9px;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+.container .hero .right .box1 .box12{
+	width: 40%;
+	height: 40%;
+	background-color: rgba(0, 0, 40, 1);;
+	color: #eaeaea;
+	font-weight: bold;
+	border-radius: 50%;
+	position: absolute;
+	right: -50px;
+	bottom: -20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: .6em;
+}
+.container .hero .right .box1 span {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .hero .right .box1 .s1 {
+	background-color: darkorange;
+	color: white;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	width: 100%;
+}
+.container .hero .right .box1 .box12{
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px){
+	nav .hamburger {
+		display: flex;
+		z-index: 999;
+		cursor: pointer;
+	}
+	.container {
+		margin: auto;
+	}
+	.container nav {
+		position: relative;	
+		justify-content: space-evenly;
+	}
+	.container nav ul {
+		background-color: inherit;
+		position: absolute;
+		top: 0;
+		right: -100%;
+		height: 100vh;
+		width: 50%;
+		display: block;
+		padding-top: 50px;
+		padding-right: 20px;
+		box-sizing: border-box;
+		text-align: right;
+		z-index: 888;
+	}
+	.container nav ul li {
+		margin-top: 20px;
+	}
+	.container nav .contact {
+		display: none;
+	}
+	.container .hero {
+		flex-direction: column;
+		padding-top: 50px;
+	}
+	.container .hero .left {
+		width: 100%;
+	}
+	.container .hero .left .btn {
+		font-size: .7em;
+	}
+	.container .hero .right {
+		width: 100%;
+		height: 100%;
+	}
+	.container .hero .right .box1 {
+		width: 50%;
+		height: 60%;
+	}
+	.container .hero .right .box1 .box11{
+		font-size: .8em;
+	}
+	.container .hero .right .box1 .box12{
+		width: 40%;
+		height: 55%;
+		font-size: .5em;
+	}
+}

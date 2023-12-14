@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Color Game</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		.container {
+			width: 200px;
+			gap: 20px;
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+
+		<h1>Color Game</h1>
+		<button type="button" id="button">Change Background Color</button>
+
+		<input type="range" min="0" max="255" id="red">
+		<input type="range" min="0" max="255" id="green">
+		<input type="range" min="0" max="255" id="blue">
+
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
